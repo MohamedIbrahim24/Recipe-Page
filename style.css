@@ -1,0 +1,272 @@
+/* Variables */
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+/* Variables */
+
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: youngserif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--Stone-100);
+  font-family: outfit;
+}
+
+h1,
+h2 {
+  font-family: youngserif;
+}
+
+h2 {
+  color: var(--Brown-800);
+  font-weight: normal;
+}
+
+p,
+li {
+  color: var(--Stone-600);
+}
+
+@media (max-width:576px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0;
+    background-color: var(--White);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+main {
+  background-color: var(--White);
+
+}
+
+@media (min-width:768px) {
+  main {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 45px 40px 0;
+    background-color: var(--White);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+}
+
+
+/* Global Rules */
+
+/* Header */
+.header {
+  padding: 15px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+
+.header h1 {
+  font-size: 36px;
+  font-weight: normal;
+  color: var(--Stone-900);
+  margin: 15px auto;
+}
+
+@media (min-width:768px) {
+  .header h1 {
+    margin: 25px auto;
+  }
+}
+
+.header > p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.header .preparation {
+  background-color: var(--Rose-50);
+  padding: 25px;
+  line-height: 2;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.header .preparation h3 {
+  color: var(--Rose-800);
+}
+
+.header .preparation ul li {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.header .preparation ul li::marker {
+  color: var(--Rose-800);
+  font-size: 12px;
+}
+
+
+
+
+@media (max-width:576px) {
+  .header {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+/* Header */
+
+/* Ingrediants */
+.ingrediants {
+  padding: 20px 0;
+}
+
+.ingrediants ul {
+  padding: 20px 0 0;
+}
+
+@media (max-width:567px) {
+  .ingrediants ul {
+    padding: 10px 0 0;
+  }
+}
+
+.ingrediants ul li {
+  margin-left: 25px;
+  padding: 5px 10px;
+}
+
+.ingrediants li::marker {
+  color: var(--Brown-800);
+  font-size: 12px;
+}
+
+.ingrediants li strong {
+  margin-left: 20px;
+}
+
+/* Ingrediants */
+
+
+/* Instructions */
+.instructions {
+  border-top: 1px solid var(--Stone-150);
+  border-bottom: 1px solid var(--Stone-150);
+  padding: 20px 0;
+}
+
+.instructions h2 {
+  margin: 10px 0;
+}
+
+.instructions ol {
+  padding: 5px 0;
+}
+
+.instructions ol li {
+  margin-left: 25px;
+  padding: 5px 10px;
+  line-height: 1.6;
+}
+
+.instructions ol li::marker {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+/* Instructions */
+
+/* Nutrition */
+.nutrition {
+  padding: 20px 0;
+}
+
+.nutrition h2 {
+  margin-bottom: 15px;
+}
+
+.nutrition table {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.nutrition table tr td {
+  padding-top: 10px;
+}
+
+.nutrition table tr:not(:last-child) td {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--Stone-100);
+}
+
+.nutrition table tr td:last-child {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+/* Nutrition */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
